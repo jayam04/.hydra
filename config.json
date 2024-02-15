@@ -1,0 +1,5 @@
+{
+    "HYDRA_APPLICATIONS_FOLDER": "$HOME/Applications",
+    "HYDRARC": "$HYDRA_FOLDER/hydrarc",
+    "HYDRA_CONFIG_FILES": ["$HYDRARC", "~/.bashrc"]
+}

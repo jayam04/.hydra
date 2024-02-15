@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Get Hydra Variables
+export HYDRA_FOLDER=$(dirname $(realpath $0))
+source $HYDRA_FOLDER/config.sh
+
+# Hydra Scripts
+export PATH=$PATH:$HYDRA_FOLDER/scripts
