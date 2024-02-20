@@ -8,8 +8,9 @@ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 zcat <install-tl-unx.tar.gz | tar xf -
 
 # Install with provided arguments
-cd install-tl-*
-sudo perl ./install-tl --no-interaction
+install_tl_dir=$(find /tmp -maxdepth 1 -type d -name "install-tl-*")
+cd $install_tl_dir
+sudo perl ./install-tl --no-interaction $@
 
 # Get year of texlive
 # TODO: use script command to find year
